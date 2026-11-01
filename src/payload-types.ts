@@ -110,10 +110,12 @@ export interface Config {
   };
   fallbackLocale: null;
   globals: {
+    'site-content': SiteContent;
     header: Header;
     footer: Footer;
   };
   globalsSelect: {
+    'site-content': SiteContentSelect<false> | SiteContentSelect<true>;
     header: HeaderSelect<false> | HeaderSelect<true>;
     footer: FooterSelect<false> | FooterSelect<true>;
   };
@@ -1625,6 +1627,169 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   createdAt?: T;
 }
 /**
+ * Everything shown on the Squeege ’n’ Shine home page. Save to update the site.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site-content".
+ */
+export interface SiteContent {
+  id: number;
+  company: {
+    name: string;
+    phone?: string | null;
+    email?: string | null;
+    address?: string | null;
+    suburb?: string | null;
+    city?: string | null;
+    state?: string | null;
+    abn?: string | null;
+    licence?: string | null;
+    hours?:
+      | {
+          day: string;
+          time: string;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  /**
+   * An emoji shown next to the business name when there is no logo.
+   */
+  emoji?: string | null;
+  /**
+   * Optional. Replaces the icon and business name in the header.
+   */
+  logo?: (number | null) | Media;
+  /**
+   * Optional. A Formspree address (e.g. https://formspree.io/f/abcdwxyz) to receive quote requests directly. Leave empty and the forms open the visitor’s email app instead.
+   */
+  formEndpoint?: string | null;
+  hero: {
+    eyebrow?: string | null;
+    h1: string;
+    sub?: string | null;
+    cta1?: string | null;
+    cta2?: string | null;
+    note?: string | null;
+    formTitle?: string | null;
+  };
+  heroImage?: (number | null) | Media;
+  heroImageAlt?: string | null;
+  heroBadge?: string | null;
+  /**
+   * The short facts under the top section. A number counts up when the page loads.
+   */
+  stats?:
+    | {
+        n: string;
+        s?: string | null;
+        l?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * The row of short points under the highlights.
+   */
+  trust?:
+    | {
+        text: string;
+        id?: string | null;
+      }[]
+    | null;
+  servicesTitle?: string | null;
+  services?:
+    | {
+        t: string;
+        i?: string | null;
+        badge?: string | null;
+        d?: string | null;
+        more?: string | null;
+        inc?:
+          | {
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        ideal?: string | null;
+        photo?: (number | null) | Media;
+        photoAlt?: string | null;
+        q?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  about?: {
+    title?: string | null;
+    text?: string | null;
+    bullets?:
+      | {
+          text: string;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  aboutImage?: (number | null) | Media;
+  aboutImageAlt?: string | null;
+  process?:
+    | {
+        t: string;
+        d?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  portfolio?:
+    | {
+        image?: (number | null) | Media;
+        cat: 'Residential' | 'Commercial';
+        cap?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Shown in the footer. Stock photos under CC BY or CC BY-SA must keep their credit.
+   */
+  credits?:
+    | {
+        title?: string | null;
+        creator?: string | null;
+        licence?: string | null;
+        url?: string | null;
+        file?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  testimonials?:
+    | {
+        q: string;
+        n?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  faq?:
+    | {
+        q: string;
+        a: string;
+        id?: string | null;
+      }[]
+    | null;
+  cta?: {
+    title?: string | null;
+    text?: string | null;
+    btn?: string | null;
+  };
+  defaults?: {
+    palette?: ('0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10') | null;
+    font?: ('0' | '1' | '2' | '3' | '4' | '5' | '6' | '7') | null;
+    style?: ('soft' | 'bold' | 'glass' | 'editorial') | null;
+    imagery?: ('stock' | 'cartoon') | null;
+    hero?: ('split' | 'centered') | null;
+    mode?: ('light' | 'dark') | null;
+  };
+  seoTitle?: string | null;
+  seoDescription?: string | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "header".
  */
@@ -1681,6 +1846,159 @@ export interface Footer {
     | null;
   updatedAt?: string | null;
   createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site-content_select".
+ */
+export interface SiteContentSelect<T extends boolean = true> {
+  company?:
+    | T
+    | {
+        name?: T;
+        phone?: T;
+        email?: T;
+        address?: T;
+        suburb?: T;
+        city?: T;
+        state?: T;
+        abn?: T;
+        licence?: T;
+        hours?:
+          | T
+          | {
+              day?: T;
+              time?: T;
+              id?: T;
+            };
+      };
+  emoji?: T;
+  logo?: T;
+  formEndpoint?: T;
+  hero?:
+    | T
+    | {
+        eyebrow?: T;
+        h1?: T;
+        sub?: T;
+        cta1?: T;
+        cta2?: T;
+        note?: T;
+        formTitle?: T;
+      };
+  heroImage?: T;
+  heroImageAlt?: T;
+  heroBadge?: T;
+  stats?:
+    | T
+    | {
+        n?: T;
+        s?: T;
+        l?: T;
+        id?: T;
+      };
+  trust?:
+    | T
+    | {
+        text?: T;
+        id?: T;
+      };
+  servicesTitle?: T;
+  services?:
+    | T
+    | {
+        t?: T;
+        i?: T;
+        badge?: T;
+        d?: T;
+        more?: T;
+        inc?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        ideal?: T;
+        photo?: T;
+        photoAlt?: T;
+        q?: T;
+        id?: T;
+      };
+  about?:
+    | T
+    | {
+        title?: T;
+        text?: T;
+        bullets?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+      };
+  aboutImage?: T;
+  aboutImageAlt?: T;
+  process?:
+    | T
+    | {
+        t?: T;
+        d?: T;
+        id?: T;
+      };
+  portfolio?:
+    | T
+    | {
+        image?: T;
+        cat?: T;
+        cap?: T;
+        id?: T;
+      };
+  credits?:
+    | T
+    | {
+        title?: T;
+        creator?: T;
+        licence?: T;
+        url?: T;
+        file?: T;
+        id?: T;
+      };
+  testimonials?:
+    | T
+    | {
+        q?: T;
+        n?: T;
+        id?: T;
+      };
+  faq?:
+    | T
+    | {
+        q?: T;
+        a?: T;
+        id?: T;
+      };
+  cta?:
+    | T
+    | {
+        title?: T;
+        text?: T;
+        btn?: T;
+      };
+  defaults?:
+    | T
+    | {
+        palette?: T;
+        font?: T;
+        style?: T;
+        imagery?: T;
+        hero?: T;
+        mode?: T;
+      };
+  seoTitle?: T;
+  seoDescription?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

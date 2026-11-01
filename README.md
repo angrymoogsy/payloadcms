@@ -1,3 +1,17 @@
+# Squeege ’n’ Shine — website on Payload CMS
+
+The home page (`/`) is the Squeege ’n’ Shine site, with the same design as the original `index.html` in [angrymoogsy/squeegenshine](https://github.com/angrymoogsy/squeegenshine). All its content is edited in the admin panel under **Site content**.
+
+- **Edit the site:** go to `/admin` → **Site content**, change any tab, click **Save**. The next page load shows the change.
+- **First start:** the app loads the original text and photos into Site content by itself (`src/SiteContent/seed.ts`).
+- **How it works:** `src/app/(frontend)/route.ts` serves the original page (`src/SiteContent/template.ts`) with its content block built from Site content (`src/SiteContent/toSiteData.ts`).
+- **Quote forms:** to receive enquiries directly, paste a Formspree address in Site content → Business details → Form endpoint.
+- Don’t use the template’s demo seed (`/next/seed`). It deletes every media file, including the site photos.
+
+The rest of this README is the original Payload template guide.
+
+---
+
 # Payload Website Template
 
 This is the official [Payload Website Template](https://github.com/payloadcms/payload/blob/3.x/templates/website). Use it to power websites, blogs, or portfolios from small to enterprise. This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.

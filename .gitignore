@@ -26,3 +26,4 @@ node_modules/
 *.db-journal
 *.db-shm
 *.db-wal
+tsconfig.tsbuildinfo

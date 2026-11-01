@@ -11,6 +11,8 @@ import { Posts } from './collections/Posts'
 import { Users } from './collections/Users'
 import { Footer } from './Footer/config'
 import { Header } from './Header/config'
+import { SiteContent } from './SiteContent/config'
+import { seedSiteContent } from './SiteContent/seed'
 import { plugins } from './plugins'
 import { defaultLexical } from '@/fields/defaultLexical'
 import { getServerSideURL } from './utilities/getURL'
@@ -64,7 +66,9 @@ export default buildConfig({
   }),
   collections: [Pages, Posts, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
-  globals: [Header, Footer],
+  globals: [SiteContent, Header, Footer],
+  // Fills the Site content global with the original Squeege ’n’ Shine content the first time the app starts.
+  onInit: seedSiteContent,
   plugins,
   secret: process.env.PAYLOAD_SECRET,
   sharp,

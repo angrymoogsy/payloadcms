@@ -1,0 +1,300 @@
+{
+  "company": {
+    "name": "Squeege ’n’ Shine",
+    "suburb": "Bentleigh",
+    "city": "Melbourne",
+    "state": "VIC",
+    "phone": "0403 927 894",
+    "email": "sebastian@squeegenshineservices.com",
+    "address": "Mobile service — Bentleigh & surrounding suburbs",
+    "abn": "",
+    "licence": "",
+    "role": "",
+    "hours": [
+      ["Mon–Fri", "7:00am – 5:00pm"],
+      ["Saturday", "9:00am – 3:00pm"],
+      ["Sunday", "Closed"]
+    ]
+  },
+  "emoji": "🧼",
+  "prop": "bucket",
+  "stack": 1,
+  "demo": false,
+  "defaults": {
+    "palette": 7,
+    "font": 0,
+    "style": "glass",
+    "imagery": "stock",
+    "hero": "split",
+    "mode": "light"
+  },
+  "hero": {
+    "eyebrow": "Window cleaning in Bentleigh & surrounds",
+    "h1": "Streak-free windows. Every single time.",
+    "sub": "Squeege ’n’ Shine brings the squeegee and the sparkle to homes, offices and shopfronts across Bentleigh and surrounds — inside, outside, frames, tracks and all.",
+    "cta1": "Get a free quote",
+    "cta2": "See services",
+    "note": "Free, no-obligation quotes",
+    "formTitle": "Quick quote — we’ll get back to you"
+  },
+  "heroBadge": "★★★★★ 5.0 · 6 Google reviews",
+  "trust": [
+    "★ 5.0 on Google (6 reviews)",
+    "Residential & commercial",
+    "Seniors & carers discount",
+    "Fully insured"
+  ],
+  "stats": [
+    {
+      "n": "Free",
+      "s": "",
+      "l": "Quotes"
+    },
+    {
+      "n": "Inside",
+      "s": "+",
+      "l": "& out"
+    },
+    {
+      "n": "Local",
+      "s": "",
+      "l": "to Glen Eira"
+    }
+  ],
+  "servicesTitle": "What we make shine",
+  "services": [
+    {
+      "i": "🏡",
+      "t": "Residential windows",
+      "d": "Inside and out — glass, frames, sills and tracks for homes of every size.",
+      "badge": "Most popular",
+      "more": "Every pane you can see, and the bits you can’t. We clean glass, frames, sills and tracks inside and out, work room by room with drop sheets and shoe covers, and check each window in the light before we pack up.",
+      "inc": [
+        "Inside and outside glass",
+        "Frames, sills and ledges wiped",
+        "Tracks vacuumed and wiped",
+        "Final streak check in natural light"
+      ],
+      "ideal": "Single and double-storey homes, units and townhouses."
+    },
+    {
+      "i": "🏢",
+      "t": "Commercial & office windows",
+      "d": "Offices, shopfronts and strata on regular rounds that keep glass gleaming.",
+      "more": "Clean glass is the first thing customers and clients notice. We run regular rounds for offices, shopfronts and strata, scheduled before opening or after hours so your business isn’t disrupted.",
+      "inc": [
+        "Shopfront glass and entry doors",
+        "Internal glass walls and partitions",
+        "Weekly, fortnightly or monthly rounds",
+        "Post-construction glass cleans for new builds"
+      ],
+      "ideal": "Retail strips, offices, medical suites, strata and new commercial builds."
+    },
+    {
+      "i": "🏢",
+      "t": "Double-storey & high access",
+      "d": "Water-fed poles for upper floors, safely from the ground.",
+      "q": "water fed pole window cleaning",
+      "more": "Upper-floor windows cleaned safely from the ground with a water-fed pole and purified water, which dries spot-free with no detergent residue. No ladders leaning on your gutters, no footprints through the house.",
+      "inc": [
+        "Upper-storey glass and frames",
+        "Hard-to-reach feature windows",
+        "Purified water, no chemical residue",
+        "Ground-based, low-disruption setup"
+      ],
+      "ideal": "Double-storey homes, townhouses and low-rise commercial buildings."
+    },
+    {
+      "i": "🔁",
+      "t": "Fly screens & tracks",
+      "d": "Screens washed, tracks vacuumed and wiped.",
+      "q": "window screen cleaning brush",
+      "more": "Dusty screens and gritty tracks undo a good window clean. We take screens out where possible, wash them by hand and clear the tracks so windows and doors slide freely again.",
+      "inc": [
+        "Screens removed, washed and refitted",
+        "Window and sliding-door tracks scrubbed",
+        "Security screens wiped down",
+        "Easy add-on to any window clean"
+      ],
+      "ideal": "Homes after winter, pollen season, or before selling or leasing."
+    },
+    {
+      "i": "🏠",
+      "t": "Gutters & solar panels",
+      "d": "Clear gutters and clean panels for better output.",
+      "q": "solar panel cleaning roof",
+      "more": "Dirty solar panels lose output, and blocked gutters overflow in the first big storm. We wash panels gently with soft brushes and purified water, and clear gutters by hand.",
+      "inc": [
+        "Solar panels washed with purified water",
+        "No harsh chemicals on panels",
+        "Gutters cleared and debris bagged",
+        "Downpipe flow check"
+      ],
+      "ideal": "Homes with solar, or overhanging trees."
+    },
+    {
+      "i": "🪞",
+      "t": "Glass & mirror cleaning",
+      "d": "Balustrades, shower screens, mirrors and glass doors.",
+      "q": "clean bright window living room",
+      "more": "Pool fencing, balustrades, shower screens and mirrors get just as grubby as the windows. We bring them up streak-free and treat hard-water marks where we can.",
+      "inc": [
+        "Pool fencing and glass balustrades",
+        "Shower screens and mirrors",
+        "Glass doors and splashbacks",
+        "Hard-water spot treatment"
+      ],
+      "ideal": "Pools, balconies, decks and bathrooms."
+    }
+  ],
+  "about": {
+    "title": "Local, careful and properly clear",
+    "text": "Squeege ’n’ Shine is a Bentleigh window cleaning business that treats your home like its own. We turn up on time, protect your floors and furniture, and don’t pack the squeegee away until every pane is streak-free.",
+    "bullets": [
+      "Drop sheets and shoe covers inside",
+      "Pure-water system for a lasting shine",
+      "One-off, quarterly or monthly rounds"
+    ]
+  },
+  "process": [
+    {
+      "t": "Get in touch",
+      "d": "Call or send the form — we reply fast."
+    },
+    {
+      "t": "We plan it together",
+      "d": "Clear options and upfront pricing."
+    },
+    {
+      "t": "Done properly",
+      "d": "Quality work and a friendly finish, no surprises."
+    }
+  ],
+  "testimonials": [
+    {
+      "q": "“Sebastian does an excellent job on our windows and solar panels. Everything looks so much better after his visit and you can tell he was thorough. He was easy to deal with and gets the job done properly. Look forward to his visits.”",
+      "n": "Andrew C. · Google review"
+    },
+    {
+      "q": "“Best window cleaner in the business. Sebastian is an absolute star. Attention to detail is second to none. So meticulous and particular. Takes so much pride in his work. Recommend highly.”",
+      "n": "Mr Baller · Google review"
+    },
+    {
+      "q": "“We had Squeege and Shine come out to clean the windows at our mechanical workshop, and we couldn’t be more impressed. The glass was quite dirty from daily workshop grime, but he brought it back to looking like brand new …”",
+      "n": "Euro Doctor, mechanical workshop · Google review"
+    },
+    {
+      "q": "“Absolutely blown away by the results from Squeege and Shine! Their attention to detail is second to none — every window, inside and out, was cleaned thoroughly and professionally …”",
+      "n": "George C., Local Guide · Google review"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do you offer a seniors discount?",
+      "a": "Yes. Seniors Card and Carer Card holders get 15% off internal and external cleans, or 20% off external-only cleans."
+    },
+    {
+      "q": "Do I need to be home?",
+      "a": "Not for exterior-only cleans. For inside work we’ll book a time that suits you."
+    },
+    {
+      "q": "What happens if it rains?",
+      "a": "Light rain is fine with our pure-water system. In heavy weather we’ll reschedule at no cost."
+    },
+    {
+      "q": "Which suburbs do you cover?",
+      "a": "Bentleigh, McKinnon, Moorabbin, Brighton East, Ormond, Carnegie and nearby Glen Eira suburbs."
+    },
+    {
+      "q": "How often should windows be cleaned?",
+      "a": "Most homes go every three to six months; shopfronts weekly or fortnightly."
+    }
+  ],
+  "cta": {
+    "title": "Let the light back in",
+    "text": "Get a free window cleaning quote today.",
+    "btn": "Get a quote"
+  },
+  "shots": [
+    "Squeegee pulling across soapy glass",
+    "Sunlit, spotless living room window",
+    "Water-fed pole on a double-storey home",
+    "Shopfront glass gleaming",
+    "Fly screen being washed",
+    "Happy client by a bright window"
+  ],
+  "credits": [
+    {
+      "title": "Washing windows at the Ambassador Office Building - 05.jpg",
+      "creator": "Jolanta Dyr",
+      "licence": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Washing_windows_at_the_Ambassador_Office_Building_-_05.jpg",
+      "file": "svc-03"
+    },
+    {
+      "title": "Window with insect screen.JPG",
+      "creator": "Maniago",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Window_with_insect_screen.JPG",
+      "file": "svc-04"
+    },
+    {
+      "title": "Cleaning solar panel.jpg",
+      "creator": "Deo photographer",
+      "licence": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Cleaning_solar_panel.jpg",
+      "file": "svc-05"
+    }
+  ],
+  "images": {
+    "hero": "hero.jpg",
+    "about": "about.jpg",
+    "services": [
+      "service-1.jpg",
+      "service-2.jpg",
+      "service-3.jpg",
+      "service-4.jpg",
+      "service-5.jpg",
+      "service-6.jpg"
+    ]
+  },
+  "portfolio": [
+    {
+      "cat": "Residential",
+      "cap": "Pool-side glazing, double-height windows",
+      "file": "portfolio-1.jpg"
+    },
+    {
+      "cat": "Residential",
+      "cap": "Two-storey feature glass & pool fencing",
+      "file": "portfolio-2.jpg"
+    },
+    {
+      "cat": "Residential",
+      "cap": "Bayside stacker doors with ocean views",
+      "file": "portfolio-3.jpg"
+    },
+    {
+      "cat": "Residential",
+      "cap": "Pool house bi-folds & glass balustrade",
+      "file": "portfolio-4.jpg"
+    },
+    {
+      "cat": "Commercial",
+      "cap": "New-build retail frontage, ground floor",
+      "file": "portfolio-5.jpg"
+    },
+    {
+      "cat": "Commercial",
+      "cap": "Shopfront glazing, streak-free finish",
+      "file": "portfolio-6.jpg"
+    },
+    {
+      "cat": "Commercial",
+      "cap": "Office walkway glass, inside & out",
+      "file": "portfolio-7.jpg"
+    }
+  ],
+  "seoTitle": "Squeege ’n’ Shine | Window Cleaning Bentleigh & Surrounds",
+  "seoDescription": "Residential and commercial window cleaning in Bentleigh and surrounding suburbs. Streak-free windows, fly screens, solar panels and glass. 5.0★ on Google. Call 0403 927 894."
+}
